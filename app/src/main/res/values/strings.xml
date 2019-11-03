@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CardPayment</string>
+
+    <string name="payment">Payment</string>
+    <string name="add_card">+ Add new card</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="add_manually">Add Manually</string>
+    <string name="choose_your_option">Choose your option \n to add a card</string>
+    <string name="check_internet_connection">Check Internet Connection</string>
+    <string name="no_card_available">No Cards \n Available</string>
+</resources>

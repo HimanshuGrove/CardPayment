@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/value_12"
+    android:layout_marginRight="@dimen/value_12"
+    android:layout_marginTop="@dimen/value_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_48"
+        android:id="@+id/rlCardDetails"
+        android:elevation="@dimen/value_4"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/tvCardNo"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_16sp"
+            android:layout_marginStart="@dimen/value_8"/>
+
+        <ImageView
+            android:layout_width="@dimen/value_32"
+            android:layout_height="@dimen/value_32"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivCheck"
+            android:layout_marginEnd="@dimen/value_8"
+            android:src="@drawable/ic_uncheck"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_200"
+        android:layout_below="@+id/rlCardDetails"
+        android:id="@+id/rlCard"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/value_12"
+            android:textSize="@dimen/textsize_26sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvCardNumber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/value_20"
+            android:textSize="@dimen/textsize_16sp"
+            android:id="@+id/tvCardHolderName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/value_20"
+            android:textSize="@dimen/textsize_16sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvExpiryDate"/>
+    </RelativeLayout>
+</RelativeLayout>

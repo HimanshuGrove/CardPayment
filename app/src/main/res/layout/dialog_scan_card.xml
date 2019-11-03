@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="@dimen/value_240"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_48"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/viewCenter"
+            android:background="@android:color/transparent"
+            android:text="@string/scan_card"
+            android:id="@+id/btnScanCard"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/viewCenter"
+            android:background="@android:color/transparent"
+            android:text="@string/add_manually"
+            android:id="@+id/btnAddManullay"
+            android:textAllCaps="false" />
+
+        <View
+            android:id="@+id/viewCenter"
+            android:layout_width="@dimen/value_1"
+            android:layout_height="@dimen/value_32"
+            android:layout_centerInParent="true"
+            android:background="@color/colortransp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_1"
+            android:background="@color/colortransp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlButton">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_credit_cards_payment"
+                android:id="@+id/ivCard"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivCard"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_16sp"
+                android:text="@string/choose_your_option"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
